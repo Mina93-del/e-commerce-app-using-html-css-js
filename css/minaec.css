@@ -256,7 +256,6 @@ button.normal {
 
 .landing .text-content {
     flex-direction: column;
-    top: 50%;
     left: 50%;
     background-color: transparent;
 }
@@ -438,6 +437,16 @@ button.normal {
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     position: relative;
     gap: 20px;
+}
+
+@media(max-width: 767px) {
+    .features-product .features-title h2 {
+        font-size: 35px;
+    }
+
+    .features-product .features-title p {
+        font-size: 12px;
+    }
 }
 
 .features-product .box {
@@ -664,9 +673,10 @@ button.normal {
     }
 
     .sm-banners .container .bnn-2 {
-        gap: 15px;
-        padding: 10px 0;
+        flex-direction: column;
+        height: 70vh;
     }
+
 
 }
 
@@ -747,7 +757,7 @@ button.normal {
 
 .sm-banners .bnn-2 .bann h2 {
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     z-index: 9;
 
@@ -760,7 +770,7 @@ button.normal {
     }
 
     .sm-banners .bann {
-        padding: 7px;
+        padding: 12px;
     }
 }
 
@@ -775,11 +785,11 @@ button.normal {
 
 @media(max-width: 767px) {
     .sm-banners .bnn-2 .bann h2 {
-        font-size: 15px;
+        font-size: 22px;
     }
 
     .sm-banners .bnn-2 .bann span {
-        font-size: 15px;
+        font-size: 17px;
     }
 }
 
