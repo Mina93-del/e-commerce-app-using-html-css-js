@@ -25,8 +25,8 @@
 
                 </div>
                 <ul class="navbar" id="navbar">
-                    <li><a class="active" href="#landing">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -35,70 +35,17 @@
             </div>
         </div>
     </div>
-    <div class="landing" id="landing">
+    <div class="page-header" id="page-header">
         <div class="container">
             <div class="text-content">
-                <h4>Trade-in-offer</h4>
-                <h2 class="typing">Suber value deals</h2>
-                <h1> On all product</h1>
+                <h2 class="typing">#Stay home</h2>
                 <p>Save more with coupons & up to 70% off</p>
-                <a href="shop.html" class="butt">
-                    <h4>Shop now</h4>
-                </a>
             </div>
         </div>
 
     </div>
-    <div class="features" id="features">
-        <div class="container">
-            <div class="boxes">
-                <div class="box">
-                    <div class="image"><img src="./img/f1.png" alt=""></div>
-                    <div class="text one">
-                        <h6>Free Shipping</h6>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="image"><img src="./img/f2.png" alt=""></div>
-                    <div class="text two">
-                        <h6>Online Order</h6>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="image"><img src="./img/f3.png" alt=""></div>
-                    <div class="text three">
-                        <h6>Save Money</h6>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="image"><img src="./img/f4.png" alt=""></div>
-                    <div class="text four">
-                        <h6>Promotions</h6>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="image"><img src="./img/f5.png" alt=""></div>
-                    <div class="text five">
-                        <h6>Happy Sell</h6>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="image"><img src="./img/f6.png" alt=""></div>
-                    <div class="text sex">
-                        <h6>F24/7 Support</h6>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </div>
     <div class="features-product" id="features-product">
-        <div class="features-title">
-            <h2 class="main-title">
-                Featured Product
-            </h2>
-            <p>Summer Collection New Modern Design</p>
-        </div>
         <div class="container">
             <div class="box">
                 <img src="./img/fp1.jpg" alt="">
@@ -243,23 +190,9 @@
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="banner" id="banner">
-        <div class="bann-content">
-            <h4>Repair Services</h4>
-            <h2>Up to <span class="special">70% off</span> - All T-shirts & Accessories</h2>
-            <button class="normal">Explore More</button>
-        </div>
-    </div>
-    <div class="features-product" id="features-product">
-        <div class="features-title">
-            <h2 class="main-title">
-                New Arrivals
-            </h2>
-            <p>Summer Collection New Modern Design</p>
-        </div>
-        <div class="container">
+
+
+
             <div class="box">
                 <img src="./img/n1.jpg" alt="">
                 <div class="description">
@@ -405,37 +338,19 @@
             </div>
         </div>
     </div>
-    <div class="sm-banners" id="sm-banners">
+    <div class="paginate" id="paginate">
         <div class="container">
-            <div class="bnn-1">
-                <div class="bann one">
-                    <h4>Crazy Deals</h4>
-                    <h2>buy 1 get 1 free</h2>
-                    <span>The best classic dress is on sale of coro</span>
-                    <button class="normal">Learn more</button>
-                </div>
-                <div class="bann two">
-                    <h4>Spring / summer</h4>
-                    <h2>Upcoming Season</h2>
-                    <span>The best classic dress is on sale of coro</span>
-                    <button class="normal">Collection</button>
-                </div>
-            </div>
-            <div class="bnn-2">
-                <div class="bann three">
-                    <h2>SEASONAL SALE</h2>
-                    <span>Winter collection - 50% off </span>
-                </div>
-                <div class="bann four">
-                    <h2>NEW FOOTWEAR COLLECTION</h2>
-                    <span>spring / summer 2026</span>
-                </div>
-                <div class="bann five">
-                    <h2>T-SHIRTS</h2>
-                    <span>New trendy print</span>
-                </div>
-            </div>
+            <a href="#" class="box">
+                1
+            </a>
+            <a href="#" class="box">
+                2
+            </a>
+            <a href="#" class="box">
+                <i class="fal fas fa-long-arrow-right"></i>
+            </a>
         </div>
+
     </div>
     <div class="news-letter" id="news-letter">
         <div class="container">
@@ -519,6 +434,15 @@
         </div>
         <p class="copy-right">Made With &LT;3 By MINA </p>
     </div>
+    <script>
+        let boxx = document.querySelectorAll(".box");
+        console.log(boxx)
+        boxx.forEach(box => {
+            box.addEventListener("click", () => {
+                window.location.href = "sproduct.html";
+            });
+        })
+    </script>
     <script src="main.js"></script>
 </body>
 

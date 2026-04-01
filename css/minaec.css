@@ -1116,3 +1116,146 @@ button.normal {
     text-align: center;
     font-size: 20px;
 }
+
+/* shop */
+.page-header {
+    background-image: url(../img/b1.jpg);
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.page-header .container {
+    position: relative;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.page-header .container h2,
+.page-header .container p {
+    color: white;
+
+}
+
+/* paginate */
+.paginate {
+    padding-bottom: var(--section-padding);
+    position: relative;
+    text-align: center;
+
+}
+
+.paginate .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.paginate .container .box {
+    background-color: #088178;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: var(--main-transition);
+}
+
+.paginate .container .box:hover {
+    background-color: #207771c0;
+}
+
+/* prodetails */
+.prodetails {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+}
+
+.prodetails .container {
+    display: flex;
+}
+
+.prodetails .container .img-sect {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.prodetails .container .smallimgs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prodetails .container .smallimg {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.prodetails .container .tit-sect {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.prodetails .container .tit-sect h4 {
+    padding: 35px 0 15px 0;
+}
+
+.prodetails .container .tit-sect h2 {
+    font-size: 26px;
+}
+
+
+.prodetails .container .tit-sect select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.prodetails .container .tit-sect input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.prodetails .container .tit-sect input:focus {
+    outline: none;
+}
+
+.prodetails .container .tit-sect button {
+    background-color: #088178;
+    color: #fff;
+}
+
+.prodetails .container .tit-sect span {
+    line-height: 25px;
+}
+
+@media (max-width: 767px) {
+    .prodetails .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prodetails .container .img-sect {
+        width: 100%;
+        padding: 10px;
+        margin-right: 0;
+    }
+
+    .prodetails .container .tit-sect {
+        width: 100%;
+
+    }
+}
