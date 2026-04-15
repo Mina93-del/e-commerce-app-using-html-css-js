@@ -344,7 +344,6 @@ button.normal {
     position: relative;
 }
 
-
 .features .container .boxes {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
@@ -1683,5 +1682,158 @@ marquee {
     .message-members .container .member {
         width: 100%;
         gap: 0;
+    }
+}
+
+/* cart */
+.cart {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .cart .container {
+        overflow-x: auto;
+    }
+}
+
+.cart .container table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+.cart .container table img {
+    width: 70px;
+}
+
+.cart .container table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+.cart .container table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+.cart .container table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+.cart .container table td:nth-child(4),
+.cart .container table td:nth-child(5),
+.cart .container table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+.cart .container table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+.cart .container table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+.cart .container table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+.cart .container table tbody tr td {
+    padding-top: 15px;
+}
+
+.cart .container table tbody td {
+    font-size: 15px;
+}
+
+.cart-add .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .cart-add .container {
+        flex-direction: column;
+    }
+}
+
+.cart-add .container .coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.cart-add .container .coupon h3 {
+    padding-bottom: 15px;
+}
+
+.cart-add .container .coupon .inputt input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+.cart-add .container .coupon button,
+.cart-add .container .subtotal button {
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+.cart-add .container .coupon button:hover,
+.cart-add .container .subtotal button:hover {
+    background-color: #088179be;
+
+}
+
+.cart-add .container .subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+.cart-add .container .subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cart-add .container .subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.cart-add .container .subtotal h3 {
+    padding-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .cart-add .container {
+        flex-direction: column;
+    }
+
+    .cart-add .container .coupon {
+        width: 100%;
+    }
+
+    .cart-add .container .subtotal {
+        width: 100%;
+        padding: 20px;
     }
 }

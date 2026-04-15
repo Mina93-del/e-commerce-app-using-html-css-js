@@ -20,7 +20,7 @@
             <a href="index.html" class="logo"><img src="./img/logo.png" alt=""></a>
             <div class="titles">
                 <div class="mob">
-                    <a class="shop-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="shop-icon" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                     <a class="res-icon" id="menu"><i class="fas fa-bars toggle-menu "></i></a>
 
                 </div>
@@ -30,7 +30,7 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#cart" class="shop-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="cart.html" class="shop-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -241,7 +241,13 @@
         <p class="copy-right">Made With &LT;3 By MINA </p>
     </div>
     <script>
-
+        let boxx = document.querySelectorAll(".box");
+        console.log(boxx)
+        boxx.forEach(box => {
+            box.addEventListener("click", () => {
+                window.location.href = "sproduct.html";
+            });
+        })
         var mainimg = document.getElementById("mainimg");
         var smallimg = document.getElementsByClassName("small-img");
 
