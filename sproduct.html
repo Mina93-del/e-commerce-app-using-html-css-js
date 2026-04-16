@@ -37,7 +37,7 @@
     </div>
     <div class="prodetails" id="prodetails">
         <div class="container">
-            <div class="img-sect">
+            <!-- <div class="img-sect">
                 <img src="./img/product/f1.jpg" width="100%" id="mainimg" alt="">
                 <div class="smallimgs">
                     <div class="smallimg">
@@ -72,10 +72,10 @@
                     from 100% cotton . this classic fit preshrunk jersy knit provides unmatched comfort with each wear .
                     featuring a taped neck and shoulder and a seamless double-needle callae and available in a range of
                     colors . it offers it all in the ultimate head-turning packages</span>
-            </div>
+            </div> -->
         </div>
     </div>
-    <div class="features-product" id="features-product">
+    <div class="features-product" id="features-product" data-limit="4">
         <div class="features-title">
             <h2 class="main-title">
                 Featured Product
@@ -83,78 +83,7 @@
             <p>Summer Collection New Modern Design</p>
         </div>
         <div class="container">
-            <div class="box">
-                <img src="./img/n1.jpg" alt="">
-                <div class="description">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronout T-Shirt</h5>
-                </div>
-                <div class="stars">
-                    <i class="filled fas fa-star"></i>
-                    <i class="filled fas fa-star"></i>
-                    <i class="filled fas fa-star"></i>
-                    <i class="filled fas fa-star"></i>
-                    <i class="filled fas fa-star"></i>
-                </div>
-                <div class="price-icon">
-                    <h4>$78</h4>
-                    <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./img/n2.jpg" alt="">
-                <div class="description">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronout T-Shirt</h5>
-                </div>
-                <div class="stars">
-                    <i class="filled fas fa-star"></i>
-                    <i class="filled fas fa-star"></i>
-                    <i class="filled fas fa-star"></i>
-                    <i class="filled fas fa-star"></i>
-                    <i class=" far fa-star"></i>
-                </div>
-                <div class="price-icon">
-                    <h4>$78</h4>
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./img/n3.jpg" alt="">
-                <div class="description">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronout T-Shirt</h5>
-                </div>
-                <div class="stars">
-                    <i class="filled fas fa-star"></i>
-                    <i class="filled fas fa-star"></i>
-                    <i class="filled fas fa-star"></i>
-                    <i class=" far fa-star"></i>
-                    <i class=" far fa-star"></i>
-                </div>
-                <div class="price-icon">
-                    <h4>$78</h4>
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./img/n4.jpg" alt="">
-                <div class="description">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronout T-Shirt</h5>
-                </div>
-                <div class="stars">
-                    <i class="filled fas fa-star"></i>
-                    <i class="filled fas fa-star"></i>
-                    <i class=" far fa-star"></i>
-                    <i class=" far fa-star"></i>
-                    <i class=" far fa-star"></i>
-                </div>
-                <div class="price-icon">
-                    <h4>$78</h4>
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-            </div>
+
 
         </div>
     </div>
@@ -240,24 +169,18 @@
         </div>
         <p class="copy-right">Made With &LT;3 By MINA </p>
     </div>
-    <script>
+    <!-- <script>
         let boxx = document.querySelectorAll(".box");
         console.log(boxx)
         boxx.forEach(box => {
             box.addEventListener("click", () => {
                 window.location.href = "sproduct.html";
             });
-        })
-        var mainimg = document.getElementById("mainimg");
-        var smallimg = document.getElementsByClassName("small-img");
-
-        document.addEventListener("click", (e) => {
-            if (e.target.classList.contains("small-img")) {
-                mainimg.src = e.target.src;
-            }
-        });
-    </script>
+        })-->
+    <script src="cart.js"></script>
+    <script src="items2.js"></script>
     <script src="main.js"></script>
+
 </body>
 
 </html>

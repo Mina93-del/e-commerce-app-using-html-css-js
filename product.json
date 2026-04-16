@@ -1,0 +1,131 @@
+[
+    {
+        "id": 0,
+        "img": "./img/fp1.jpg",
+        "name": "Urban Shadow Tee",
+        "price": 350,
+        "catetory": "adidas",
+        "secction": "feat-pro"
+    },
+    {
+        "id": 1,
+        "img": "./img/fp2.jpg",
+        "name": "Midnight Vibe Shirt",
+        "price": 280,
+        "catetory": "nike",
+      "secction": "feat-pro"
+    },
+    {
+        "id": 2,
+        "img": "./img/fp3.jpg",
+        "name": "Classic Edge TeeD",
+        "price": 400,
+        "catetory": "h&m",
+        "secction": "feat-pro"
+    },
+    {
+        "id": 3,
+        "img": "./img/fp4.jpg",
+        "name": "Skyline Fit Shirt",
+        "price": 530,
+        "catetory": "zara",
+        "secction": "feat-pro"
+    },
+    {
+        "id": 4,
+        "img": "./img/fp5.jpg",
+        "name": "Minimal Mood Tee",
+        "price": 250,
+        "catetory": "versache",
+        "secction": "feat-pro"
+    },
+    {
+        "id": 5,
+        "img": "./img/fp6.jpg",
+        "name": "Street Pulse Shirt",
+        "price": 280,
+        "catetory": "puma",
+        "secction": "feat-pro"
+    },
+    {
+        "id": 6,
+        "img": "./img/fp7.jpg",
+        "name": "Noir Style Tee",
+        "price": 220,
+        "catetory": "town team",
+        "secction": "feat-pro"
+    },
+    {
+        "id": 7,
+        "img": "./img/fp8.jpg",
+        "name": "Daily Comfort Shirt",
+        "price": 370,
+        "catetory": "tie house",
+        "secction": "feat-pro"
+    },
+    {
+        "id": 8,
+        "img": "./img/n1.jpg",
+        "name": "Clean Cut Tee",
+        "price": 320,
+        "catetory": "mopaco",
+        "secction": "arriv-pro"
+    },
+    {
+        "id": 9,
+        "img": "./img/n2.jpg",
+        "name": "Soft Touch Tee",
+        "price": 80,
+        "catetory": "lc waikiki",
+        "secction": "arriv-pro"
+    },
+    {
+        "id": 10,
+        "img": "./img/n3.jpg",
+        "name": "Motion Flex Shirt",
+        "price": 300,
+        "catetory": "zara",
+        "secction": "arriv-pro"
+    },
+    {
+        "id": 11,
+        "img": "./img/n4.jpg",
+        "name": "Pure Cotton Classic",
+        "price": 260,
+        "catetory": "team 94",
+        "secction": "arriv-pro"
+    },
+    {
+        "id": 12,
+        "img": "./img/n5.jpg",
+        "name": "Chill Zone Tee",
+        "price": 370,
+        "catetory": "demo 2",
+        "secction": "arriv-pro"
+    },
+    {
+        "id": 13,
+        "img": "./img/n6.jpg",
+        "name": "Modern Wave Shirt",
+        "price": 490,
+        "catetory": "kareem 23",
+        "secction": "arriv-pro"
+    },
+    {
+        "id": 14,
+        "img": "./img/n7.jpg",
+        "name": "Basic Luxe Tee",
+        "price": 340,
+        "catetory": "hutcha",
+        "secction": "arriv-pro"
+    },
+    {
+        "id": 15,
+        "img": "./img/n8.jpg",
+        "name": "Urban Shadow Tee",
+        "price": 240,
+        "catetory": "adidas",
+        "secction": "arriv-pro"
+    }
+
+]
