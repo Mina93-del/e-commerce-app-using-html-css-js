@@ -1,19 +1,17 @@
 const params = new URLSearchParams(window.location.search);
-        const id = params.get("id");
-        console.log(id);
+const id = params.get("id");
+console.log(id);
 
-        fetch('product.json')
+fetch('product.json')
     .then(response => response.json())
     .then(data => {
         //    console.log(data) ;
         const prodetails = document.querySelector(".prodetails");
         const detal = prodetails.querySelector(".container");
         const selectedprod = data.find(product => product.id == id);
-        console.log(selectedprod);
-        console.log(detal);
 
-            if (id) {
-                detal.innerHTML += `
+        if (id) {
+            detal.innerHTML += `
                       <div class="img-sect">
                 <img src=${selectedprod.img} width="100%" id="mainimg" alt="">
                 <div class="smallimgs">
@@ -35,15 +33,8 @@ const params = new URLSearchParams(window.location.search);
                 <h6>Home / T-Shirt</h6>
                 <h4>${selectedprod.name}</h4>
                 <h2>$${selectedprod.price}</h2>
-                <select>
-                    <option>Select Size</option>
-                    <option>SMALL</option>
-                    <option>MEDIAM</option>
-                    <option>LARGE</option>
-                    <option>XLARGE</option>
-                </select>
-                <input type="number" value="1">
-                <BUtton class="normal">Add To Cart</BUtton>
+                <input type="number" value="1" min="1">
+                <BUtton class="normal" id="butt-cart">Add To Cart</BUtton>
                 <h4>Product Details</h4>
                 <span>the gildan ultra cotton t-shirt is made from a substintial 6.0 oz . per sq .yd fabric contructed
                     from 100% cotton . this classic fit preshrunk jersy knit provides unmatched comfort with each wear .
@@ -52,14 +43,30 @@ const params = new URLSearchParams(window.location.search);
             </div>
     `}
     
-  var mainimg = document.getElementById("mainimg");
+        var mainimg = document.getElementById("mainimg");
         var smallimg = document.getElementsByClassName("small-img");
-
         document.addEventListener("click", (e) => {
             if (e.target.classList.contains("small-img")) {
                 mainimg.src = e.target.src;
             }
         });
+        console.log(selectedprod);
+        document.addEventListener("click", function (e) {
+            if (e.target.id === "butt-cart") {
+                // console.log(qty);
+                window.location.href = `cart.html`;
+                                addtocart(selectedprod);
+
+            }
+        });
     })
-    
+
+
+
+function addtocart(product) {
+    let cart = JSON.parse(localStorage.getItem(`cart`)) || []
+    const qty = document.querySelector('input[type="number"]').value;
+    cart.push({ ...product, quantity: qty })
+    localStorage.setItem(`cart`, JSON.stringify(cart))
+}
 
